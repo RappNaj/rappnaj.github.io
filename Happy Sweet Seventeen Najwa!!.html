@@ -1,0 +1,131 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://bukadulu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><!--<script src="https://bukadulu.likeadream.repl.co/script.js"></script>-->
+<head>
+
+</head>
+<body>
+<style>
+body{background-image: url("apinajwaa.jpeg");background-repeat: repeat;background-size: 100% auto;background-position: center center;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.postimg.cc/hPJZVmt2/tium.gif" id="animasi" width="100px" height="100px"/></div></div><div id="koteks"><span maxlength="5" id="hasiljawab"></span><span id="sp2"></span><span id="sp3"></span></div>
+
+<!-- Tombol WA --><div id="tombWA"><a class='button' onClick='bukaWa();'>Kirim Pesan</a></div>
+
+</div>
+
+<script>
+//Teks 1
+var a=0,finish;
+finish = "Makasi ya uda liatt ini semuaa";
+//Teks 2
+var i=0,finish2;
+finish2 = "Happy Sweet Seventeen Najwa Sayang. Love u sm bby <3";  
+function play() {
+//Link Audio Bisa Diganti
+var audio = new Audio('hbdlofi.mp3');audio.play();audio.loop=true;audio.addEventListener('ended', function() {this.currentTime = 0;this.play();}, false);}         
+
+//Pesan WhatsApp
+ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=" + window.nama + " udah liat semuanyaa" + "%0A%0A" + nama + " " + prtnya + "%0A%0A" + "Jawabannya%3A" + " *" + tnya + "*" + "%0A%0A" + "- " + dateTime;} 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                cancelButtonColor: '#909090', confirmButtonColor: '#2B2B2B', allowOutsideClick: false,
+            });
+            async function mulai(){          	
+                var { value: nama } = await swals.fire({
+                    title: 'Nama kamu?',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });                           
+                if(nama && nama.length < 11){
+                	play();
+                	window.nama = nama;
+                    await swals.fire('Hai, ' + nama + '  sayang');
+                    await swals.fire('Ada yang mau api sampein ni ke wawaaa');
+                    await swals.fire('Moga wawa senang yaa');
+                    await swals.fire('Happy Sweet Seventeen Sayanggg!');
+                    await swals.fire('Semoga panjang umur, Sehat selalu yaa');
+                    await swals.fire('Semoga kedepannya kita jadi pribadi yang lebih baikk');
+                    await swals.fire('Dan Semoga yang wawa inginkan bakal tercapai nantiii');
+                    await swals.fire('Oiya sayang tu orang paling cantik comel baik the best pokoknyaa hihi');
+                    await swals.fire('Jadi gausa lagi yaa sayang insecure segala macam, btw kacamata wawa comel bgt gaboong :)');
+                    await swals.fire('Makasih banget yaa udah mau sama api sampe sekarang, ngarahin apii, nasihatin api jugaa');
+                    await swals.fire('Kita sama sama truss yaa sayangg, gaboleh boongg :(');
+                    await swals.fire('Pokoknya doa terbaik buat wawaaa yaaa');
+                    await swals.fire('hmm sayang..');
+                    await swals.fire('api juga mau minta maaf yaa buat semua kesalahan apii');
+                    await swals.fire('api janjii gamau ngecewain wawa lagii');
+                    await swals.fire('api sayang banget sama ayanggg');
+                    await swals.fire('jadi sayang..');
+                    
+                    prtnya = "mau maafin api kan :)?";
+                    //
+                    window.prtnya = prtnya;
+                    var { value: tnya } = await swals.fire({
+                    imageUrl: 'https://i.postimg.cc/PJ16F73f/plis.gif',
+                    imageWidth: 100,
+                    imageHeight: 100,
+                    title: nama + ' ' + prtnya + ' &#10084;',
+                    input: 'text',
+                    confirmButtonText: 'Konfirmasi',
+                    showCancelButton: false,
+                });                           
+                if(tnya && tnya.length < 11){
+                	window.tnya = tnya;
+                    document.getElementById("hasiljawab").innerHTML = "Jawaban&nbsp;" + nama + ":" + "&nbsp;<b>" + tnya + "</b>";
+                    await swals.fire(`Makasii Sayangg`, `Sekarang wawaa lihat ini ya &#10084;&#65039;`);
+                    expl();
+                } else {
+                    await swals.fire('Ups!', 'Tidak boleh kosong / lebih dari 10 karakter, ya!');
+                    mulai();
+                }                 
+                //                                   
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }            
+            mulai();
+</script>
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function tombol() {document.getElementById('tombWA').style.visibility = "visible";document.getElementById('tombWA').style.opacity = "1";}  
+  async function expl(){document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  
+async function duar(){
+var e1 = document.getElementById('animasi');e1.classList.add("degdeg");
+document.getElementById('konten').style.top = "0";document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "110px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";document.getElementById('koteks').style.opacity = "1";
+duar2();setInterval(createHeart,200);
+document.body.style.backgroundColor = "#000";
+}
+function duar2(){
+if(a<finish.length){document.getElementById("sp2").innerHTML += finish.charAt(a);a++;setTimeout(duar2,100);}
+if(a==finish.length){duar3();}
+}
+function duar3(){
+if(i<finish2.length){document.getElementById("sp3").innerHTML += finish2.charAt(i);i++;setTimeout(duar3,200);}
+if(i==finish2.length){setTimeout(tombol,1000);}
+}
+
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 100) {
+       heartArr[0].remove()
+    }
+},100);
+</script>
+</body>
+</html>
